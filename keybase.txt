@@ -1,0 +1,64 @@
+==================================================================
+https://keybase.io/ramnes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ramnes.eu
+  * I am ramnes (https://keybase.io/ramnes) on keybase.
+  * I have a public key with fingerprint 540F 2655 FA63 6C1A 6211  068B C136 494F 35E6 6B97
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "540f2655fa636c1a6211068bc136494f35e66b97",
+            "host": "keybase.io",
+            "key_id": "c136494f35e66b97",
+            "uid": "e7743dc993af057ad6e831df085b9400",
+            "username": "ramnes"
+        },
+        "service": {
+            "hostname": "ramnes.eu",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1409073452,
+    "expire_in": 157680000,
+    "prev": "b392cc5d04b9c09c477ec622d368715c23622cf13d46e2a84d72e193f3b2a60d",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.3.1
+Comment: https://keybase.io/crypto
+
+yMHcAnicbVFbSBRhFJ5VV83ayBuYQsRfvU0299lZCG2xXiIoxUrcXGb++Wcdy5l1
+9mImhmWlKFr4UBESqCCCSkIiReUlUsQ2SXsyjF5cEtMHA7tgQf9IPQSdl8P5zvd9
+5xzOK1cikeZIb9Q3FxYPzjteT6xFiJKfk2Q9UEy1DnjqwUW0nTTdCCAraOlGGHgA
+z1EaI/C8JgusAGlZYGiaEtwKpFmBkziN5ZEgKJIISFBphmwFtlHkEMrXTYzhwq+r
+GP0PP7LdQKLIsSqUJFbWKF6UVQG5WVrVKDevSBxF2cQQsgy5GmG2JVcbKAQaSICx
+qA6RvbE9+J9+PopgWdAywyY0L2G4MhwOemxVuC5o02qR4v9j4Fd0Q8UnY0EUWSHd
+NICHxkwY1m1HmqMkSmQ5niEBuhzULeTXbQYvCm4Khz0GRbGlwkoMhLxKcYoEKQly
+ooigwDAqK7hFmocMiwuo0azKCYiR3ZwqMoiWWI1VGFmgVGCfVGOYwMPjNeUAtgzp
+AUMORywEGl5O+JIIRxqR7Eywn0ak7djz95UDKJXo8yYcWhmayW5Pydnt63ZNLaVE
+2FZn/+C8ktpTkNFbmJ8ITsxND/nnqGrf1+bom1jXctLdffGpPP3O5q8zN2ZP97Yk
+H/Ye30hto753lBCZ8An9OX2mf2WgKid29XZcrinP7Wip3fWtc6QjvvrwxdH1B3k/
+Gn0z97yPYel4XfnwUuZ6xv7E+JfRZeLReGHwShNaX7wvNmX5SXdx8QH47pnj1seN
+sfnroGKUzUwZbHM1v48dSxZz2j8FRvZ2HWG2WrxTw6jTNel8WzRdldB30xnqWVor
+J2fLsipPFjnpaxcmzneX9p4tGs8mTy0//zDmLMvtrCiI7XQ+3Tq3sNr6G8AfDCY=
+=oN85
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ramnes
+
+==================================================================

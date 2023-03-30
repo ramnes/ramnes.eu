@@ -7,14 +7,27 @@
     <title>ramnes | Guillaume Gelin</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <style type="text/css">
+      @font-face {
+          font-family: "Mona Sans";
+          src:
+              url("https://github.githubassets.com/static/fonts/github/mona-sans.woff2") format("woff2 supports variations"),
+              url("https://github.githubassets.com/static/fonts/github/mona-sans.woff2") format("woff2-variations");
+          font-weight: 200 900;
+          font-stretch: 75% 125%;
+      }
+
+      @font-face {
+          font-family: "Hubot Sans";
+          src:
+              url("https://github.githubassets.com/static/fonts/github/hubot-sans.woff2") format("woff2 supports variations"),
+              url("https://github.githubassets.com/static/fonts/github/hubot-sans.woff2") format("woff2-variations");
+          font-weight: 400 900;
+          font-stretch: 75% 125%;
+      }
+
       html {
           padding: 0;
-          background-image: -moz-radial-gradient(center, circle farthest-corner, #fff 0%, #ddd 100%);
-          background-image: -o-radial-gradient(center, circle farthest-corner, #fff 0%, #ddd 100%);
-          background-image: -webkit-gradient(radial, center center, 0, center center, 510, color-stop(0, #fff), color-stop(1, #ddd));
-          background-image: -webkit-radial-gradient(center, circle farthest-corner, #fff 0%, #ddd 100%);
-          background-image: -ms-radial-gradient(center, circle farthest-corner, #fff 0%, #ddd 100%);
-          background-image: radial-gradient(center, circle farthest-corner, #fff 0%, #ddd 100%);
+          background-color: #333;
       }
 
       a {
@@ -31,21 +44,20 @@
       }
 
       h1 {
+          text-shadow: 3px 10px 50px #444;
           margin: 0 0 -10px 0;
-          font-family: Armata, sans-serif;
+          font-family: "Mona Sans", sans-serif;
           font-size: 3em;
-          font-weight: 520;
-          color: #555;
-          text-shadow: 0 -1px 0 #777;
+          font-weight: 800;
+          color: #ddd;
       }
 
       h2 {
           margin: 0;
-          font-family: Armata, sans-serif;
+          font-family: "Hubot Sans", sans-serif;
           font-size: 2em;
-          font-weight: 400;
-          color: #aaa;
-          text-shadow: 0 -1px 0 #777;
+          font-weight: 500;
+          color: #555;
       }
 
       #content {
@@ -60,7 +72,7 @@
           height: 250px;
           margin-left: -200px;
           margin-top: -350px;
-          padding-top: 50px;
+          padding-top: 60px;
           display: none;
           text-align: center;
       }
@@ -74,9 +86,8 @@
           height: 240px;
           margin-left: -120px;
           margin-top: -170px;
-          border: 0.3em solid #fff;
+          border: 0.6em solid #555;
           border-radius: 500px;
-          box-shadow: 1px 2px 10px #aaa;
           -moz-transform: rotate(5deg);
           -webkit-transform: rotate(5deg);
           -o-transform: rotate(5deg);
@@ -91,12 +102,18 @@
 
       #header img:hover{
           cursor: pointer;
-          box-shadow: 3px 10px 50px #aaa;
+          border: 0.6em solid #ddd;
+          box-shadow: 3px 10px 50px #444;
           -moz-transform: rotate(0);
           -webkit-transform: rotate(0);
           -o-transform: rotate(0);
           -ms-transform: rotate(0);
           transform: rotate(0);
+          -moz-transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
       }
 
       #social {
@@ -104,36 +121,37 @@
           left: 50%;
           top: 50%;
           width: 400px;
-          height: 50px;
+          height: 70px;
           margin-left: -200px;
-          margin-top: 150px;
+          margin-top: 120px;
           display: none;
           text-align: center;
       }
 
       #social img {
-          opacity: 0.5;
-          filter:alpha(opacity=50);
+          width: 65px;
+          opacity: 0.15;
+          filter: invert(100%);
+          filter: alpha(opacity=15);
           margin-left: 0.6em;
           margin-right: 0.6em;
-          -moz-transition: all 1.4s ease;
-          -webkit-transition: all 1.4s ease;
-          -o-transition: all 1.4s ease;
-          -ms-transition: all 1.4s ease;
-          transition: all 1.4s ease;
+          -moz-transition: all 0.7s ease;
+          -webkit-transition: all 0.7s ease;
+          -o-transition: all 0.7s ease;
+          -ms-transition: all 0.7s ease;
+          transition: all 0.7s ease;
       }
 
       #social img:hover {
-          opacity: 1;
-          filter:alpha(opacity=100);
-          -moz-transition: all 0.4s ease;
-          -webkit-transition: all 0.4s ease;
-          -o-transition: all 0.4s ease;
-          -ms-transition: all 0.4s ease;
-          transition: all 0.4s ease;
+          opacity: 0.85;
+          filter: alpha(opacity=85);
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease;
       }
     </style>
-    <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
     <script>
@@ -153,8 +171,8 @@
     <script>
       $(document).ready(function() {
           $("#header").click(function() {
-              $("#social").slideToggle(500);
-              $("#title").slideToggle(500);
+              $("#social").fadeToggle(500);
+              $("#title").fadeToggle(300);
           });
       });
     </script>
@@ -181,10 +199,10 @@
         <h2>Guillaume Gelin</h2>
       </div>
       <div id="social">
-        <a href="https://www.linkedin.com/in/r4mnes">
-          <img src="assets/linkedin.png" alt="LinkedIn"/></a>
         <a href="https://github.com/ramnes">
           <img src="assets/github.png" alt="GitHub"/></a>
+        <a href="https://www.linkedin.com/in/r4mnes">
+          <img src="assets/linkedin.png" alt="LinkedIn"/></a>
         <a href="https://twitter.com/r4mnes">
           <img src="assets/twitter.png" alt="Twitter"/></a>
         <a href="mailto:&#x63;&#x6F;&#x6E;&#x74;&#x61;&#x63;&#x74;&#x40;&#x72;&#x61;&#x6D;&#x6E;&#x65;&#x73;&#x2E;&#x65;&#x75;">
